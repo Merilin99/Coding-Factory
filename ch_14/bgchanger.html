@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+    </head>
+    <body>
+        <input type="button" id="koumpi" value="Change Background Color">
+
+        <script>
+            //controller
+            let koumpaki= $("#koumpi")
+            koumpaki.on("click", () => changebackground ())
+
+            //model
+            function changebackground () {
+                changebackgroundview()
+            }
+
+            //view
+            function changebackgroundview () {
+                
+                let arr= ["green", "blue", "red", "white"]
+                let tyxh = Math.floor(Math.random()*arr.length)
+                //document.body.style.backgroundColor = arr[tyxh]
+                $("body").css("background-color" , arr[tyxh])
+            }
+        </script>
+    </body>
+</html>

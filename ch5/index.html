@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+     * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}    
+
+.container {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #363636;
+    position: sticky;
+    top: 0;
+}
+.logo > img {
+    width: auto;
+    height: 120px;
+    vertical-align: middle;
+}
+.navbar {
+    width: 900px;
+}
+.navbar > ul {
+    height: 120px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+}
+
+.navbar a:active {
+    background-color: rgb(172, 172, 231);
+}
+
+/* .nav > li:not(:first-child) > a:hover {
+    background-color: rgb(116, 149, 206);
+} */
+
+.dropdown {
+    position: relative;
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+}
+
+.dropdown-content {
+    display: none;
+    width: 160px;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    padding-top: 50px;
+    background-color: #618cbd;
+    list-style: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.dropdown-content > li {
+    width: 100%;
+    border-bottom: 1px solid #fff; 
+}
+
+.dropdown-content > li:last-of-type {
+    border-bottom: none;
+}
+
+.dropdown-content a {
+    display: block;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(22, 152, 109);
+}
+
+.dropdown > a {
+    position: relative;
+    z-index: 1;
+}
+
+.dropdown:hover > ul {
+    display: flex;
+}
+    
+    
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="logo_opa2.png" alt="AUEB">
+            </div>
+            <div class="navbar">
+                <ul class="nav">
+                    <li class="dropdown"><a href="javascript:void(0)">Home &#9662  </a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Εκπαίδευση</a></li>
+                            <li><a href="#">Έρευνα</a> </li>
+                            <li><a href="#">Υπηρεσίες</a> </li>
+                            <li><a href="#">Διασύνδεση</a> </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="">We Educate &#9662 </a> 
+                        <ul class="dropdown-content">
+                            <li><a href="#">Πανεπιστήμιο</a></li>
+                            <li><a href="#">Σεμινάρια</a> </li>
+                            <li><a href="#">Μεταπτυχιακά</a> </li>
+                            <li><a href="#">Διδακτορικά</a> </li>
+                        </ul>  
+                    </li>
+                    <li class="dropdown"><a href="">We Innovate &#9662 </a> 
+                        <ul class="dropdown-content">
+                            <li><a href="#">Καινοτομίες</a></li>
+                            <li><a href="#">Διακρίσεις</a> </li>
+                            <li><a href="#">Ευκαιρίες</a> </li>
+                            <li><a href="#">Ακαδημία</a> </li>
+                        </ul>  
+                    </li>
+                    <li class="dropdown"><a href="">We Are &#9662</a> 
+                        <ul class="dropdown-content">
+                            <li><a href="#">Προσωπικό</a></li>
+                            <li><a href="#">Επικοινωνία</a> </li>
+                            <li><a href="#">Ποιοι είμαστε</a> </li>
+                            <li><a href="#">Η ιστορία</a> </li>
+                        </ul>  
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

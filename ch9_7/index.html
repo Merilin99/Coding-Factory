@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <style>
+            ul {
+                display: flex;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                background-color: #363636;
+            }
+
+            @media (max-width: 1200px) {
+                ul {
+                    flex-direction: column;
+
+                    display: none;
+                }
+
+                .nav {
+                    display: flex !important;
+                    justify-content: center;
+                }
+
+                .uldisplayflex {
+                    display: flex !important;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .toggle-img { 
+                    display: none;
+                }
+            } 
+            @media (max-width: 800px) {
+                .home-title { 
+                    font-size: 0.8em;
+                }
+                .home-subtitle { 
+                    font-size: 0.8em;
+                }
+            } 
+            @media (max-width: 500px) {
+                .home-title { 
+                    font-size: 0.6em;
+                }
+                .home-subtitle { 
+                    font-size: 0.6em;
+                }
+            } 
+            .toggle-img { 
+                    height: 40px;
+                }
+
+            .nav {
+                vertical-align: middle;
+                display: inline-block;
+            }
+
+            .nav li {
+                display: inline-block;
+            }
+
+            .aueb-img {
+                vertical-align: middle;
+                width: 260px;
+                height: auto; 
+            }
+            
+            .nav a {
+                font-size: 1.8rem;
+                padding: 10px 20px; 
+                text-decoration: none;
+                color: white;
+
+
+            }
+
+            .header {
+                background-color: #363636;
+            }
+
+            .home-img {
+                overflow: hidden;
+                height: calc(95vh - 120px);
+                background-image: url("aueb_building.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center; 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+        .home-title {
+            color: white;
+            width: 50%;
+            font-weight: 600;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;          
+        }
+
+        .home-subtitle {
+            color: white;
+            width: 50%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+        }
+
+        .main {
+            padding: 20px; 
+        }
+
+        .footer {
+            background-color: #363636;
+            color: white;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .copyright {
+            display:inline-block;
+        }   
+        .social {
+            float : right;
+        }   
+
+        .social i {
+            padding-left: 10px;
+            padding-right: 5px;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+            <header class="header">
+                <img class="aueb-img" src="logo_opa.png" alt="AUEB"/>
+                <img class="toggle-img" src="toggle_img.png" alt="TOGGLE MENU"/>
+                
+                <div class="nav">
+                    <ul>
+                        <li> <a href="">Home</a> </li>
+                        <li> <a href="">We Educate</a> </li>
+                        <li> <a href="">We Innovate</a> </li>
+                        <li> <a href="">We Are</a> </li> 
+                    </ul>
+                </div>
+            </header>
+
+
+            <aside class="home-img"> 
+                <div class="home-title"> 
+                    <h1>
+                    All you need is Love,Passion,Design & Software and..."Web Programming"   
+                        </h1>
+                    </div>
+                    <div class="home-subtitle"> 
+                        <h2>
+                    Become the Web Programmer you meant to be with a deep knowledge in Web technologies and methods for empowering your career   
+                        </h2>
+                </div>
+            </aside>
+
+
+            <main class="main">
+                <h1>Why Web Development Course</h1>
+                <p>The Department
+                    The Department of Economics of the Athens University of Economics and Business aims to provide teaching and research at the highest academic level. The scope of the Department covers the entire spectrum of economics and its applications, such as microeconomic and macroeconomic analysis, business economics, finance, public, monetary, international and agricultural economics, industrial organization and business strategy, economic of the environment and natural resources, economic and financial history as well as the relevant quantitative tools of mathematics, statistics and econometrics.</p>
+                </main>
+
+
+
+            <footer class="footer">
+                <div class="copyright"> 
+                    © Copyright 1996 - 2024 | Athens University of Economics and Business
+                </div>
+
+                <div class="social">
+                    <span>
+                        Follow us: 
+                    </span>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+
+            </footer>
+        </div>
+        
+        <script>
+            const imgMenu= document.querySelector (".toggle-img")
+            const ul= document.querySelector("ul")
+
+            imgMenu.addEventListener("click", function () {
+
+                ul.classList.toggle("uldisplayflex"); 
+            })
+        </script>
+    </body>
+</html>

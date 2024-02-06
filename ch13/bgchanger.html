@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="button" id="koumpi" value="Change Background Color">
+
+        <script>
+            //controller
+            let koumpaki= document.querySelector("#koumpi")
+            koumpaki.addEventListener("click", () => changebackground ())
+
+            //model
+            function changebackground () {
+                changebackgroundview()
+            }
+
+            //view
+            function changebackgroundview () {
+                
+                let arr= ["green", "blue", "red", "white"]
+                let tyxh = Math.floor(Math.random()*arr.length)
+                document.body.style.backgroundColor = arr[tyxh]
+            }
+        </script>
+    </body>
+</html>

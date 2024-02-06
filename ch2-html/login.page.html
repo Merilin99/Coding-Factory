@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style> 
+    body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(100, 111, 210);
+    }
+    .login-container {
+        width: 200px;
+        margin: 0 auto;
+        background-color: #c9d0cc;
+        padding: 300px;
+        box-shadow: 50 20 px 10 px rgb(150, 150, 197) ;
+    }
+    .login-container h2 {
+        text-align: center;
+    }
+    .login-form {
+        margin-top: 100px;
+    } 
+    .login-form input [type="text"],
+    .login-form input [type="password"] {
+        width: 100%;
+        padding: 50px;
+        margin-bottom: 50px;
+        border: 10px solid #ccc;
+        border-radius: 50px;
+    }
+    .login-form input [type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: blue;
+        color: #5983bf;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+        </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2> login </h2>
+        <form class="login-form" action="/your-login-endpoint" method="post"> 
+            <input type="text" name="username"
+            placeholder="Username" required>
+            <input type="password" name="password"
+            placeholder="Password" required>
+            <input type="submit" value="Sign In">
+        </form>
+    </div>
+</body>
+</html>
